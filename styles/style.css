@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&family=Tektur:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenedor{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "grid1 grid1 grid2 grid2"
+    "grid1 grid1 grid2 grid2"
+    "grid3 grid3 grid4 grid4" 
+    "grid3 grid3 grid4 grid4"
+    ;
+}
+
+
+.grid1{
+    background-color: #ae4a4a8f;
+    font-size: 4rem;
+    font-weight: 800;
+
+    grid-area: grid1
+}
+
+.grid2{
+    background-color: #ae4a4a8f;
+    font-size: 4rem;
+    font-weight: 800;
+
+    grid-area: grid2
+}
+
+.grid3{
+    background-color: #ae4a4a8f;
+    font-size: 4rem;
+    font-weight: 800;
+
+    grid-area: grid3
+}
+
+.grid4{
+    background-color: #ae4a4a8f;
+    font-size: 4rem;
+    font-weight: 800;
+
+    grid-area: grid4
+}
+
+.contenedor > div {
+    display: grid;
+    place-items: center;
+}
+
+.grid{
+    border:1px solid rgb(0, 0, 0) ;
+}
+
+.cabecera{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row; 
+justify-content: center;
+background-color: #ae4a4a;
+color: #000000;
+font-weight: 700;
+}
+
+
+h1{
+text-align: center;
+}
+
+body{
+    background-color: #EEE5E9;
+}
+
+main{
+    padding: 0.8rem;
+}
+
+.miprimersitio{
+color: #1D201F;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.menu__ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    padding: 0.625rem;
+    gap: 10px;
+    grid-gap: 10px;
+}
+
+.menu__item a{
+    color: #383D3B;
+    text-decoration: none;
+}
+
+.menu__item.active a, 
+.menu__item a:hover, 
+.menu__item.active{
+    text-decoration:underline;
+}
+
+
+.footer li a 
+{
+    color:#000000;
+    text-decoration: none;
+}
+.footerList{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: center;
+    background-color: #ae4a4a;
+    color: #000000;
+    font-weight: 700;
+    padding: .625rem;
+    margin-bottom: 0.625rem;
+}
+.footer li
+{
+    list-style-type: none;
+    margin-inline: 1rem;
+    text-align: center;
+}
+
+.parrafo_form{
+text-decoration: underline;
+}
+
+.wppArriba{
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    font-size: 4rem;
+    color: #bbb8b7;
+}
+
+/*Cajitas*/
+.caja1{
+    width: 33%;
+    min-height: 1rem;
+    background-color: #ae4a4a;
+    margin-inline: 0.01rem;
+    padding: 0.625rem;
+    display: inline-block;
+    border-style: groove;
+    border-radius: 0.8rem;
+    border-top: solid 5px black;
+    border-left:solid 5px black;
+    border-right:solid 5px black;
+    border-bottom:solid 5px black;
+}
+.caja1 p{
+    text-align: center;
+}
+
+.caja1_img{
+    width: 100%;
+
+}
+
+.caja1_titulo{
+text-align: center;
+padding: 0.5rem;
+}
+
+.caja1_p{
+text-align:justify;
+}
+
+.caja1_boton,
+.caja1_boton a{
+    padding: 0.2rem;
+    margin: 0.8rem;
+    border-radius: 1rem;
+    background-color:#d96ac5;
+    color: #1D201F;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
